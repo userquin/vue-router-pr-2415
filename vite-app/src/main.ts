@@ -1,11 +1,13 @@
+import { DataLoaderPlugin } from 'unplugin-vue-router/data-loaders'
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
-import { routes } from 'vue-router/auto-routes'
+import { RouterLink, RouterView } from 'vue-router'
 import App from './App.vue'
+import { router } from './router.ts'
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-})
-
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+// @ts-expect-error: FIXME: should be doable
+app.use(DataLoaderPlugin, { router })
+app.component('RouterLink', RouterLink)
+app.component('RouterView', RouterView)
+app.use(router)
+app.mount('#app')
