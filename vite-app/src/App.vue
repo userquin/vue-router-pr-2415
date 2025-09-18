@@ -5,9 +5,11 @@ import { useRoute, useRouter } from 'vue-router'
 const router = useRouter()
 const route = useRoute()
 watch(route, (to) => {
+  // eslint-disable-next-line no-console
   console.log('Route changed to:', to.fullPath)
 })
 router.beforeEach((to, from) => {
+  // eslint-disable-next-line no-console
   console.log('beforeEach: updating route to:', to.fullPath, 'from:', from?.fullPath)
 })
 </script>
