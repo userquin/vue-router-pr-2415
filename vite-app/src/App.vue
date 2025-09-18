@@ -7,9 +7,8 @@ const route = useRoute()
 watch(route, (to) => {
   console.log('Route changed to:', to.fullPath)
 })
-router.beforeEach((to, from, next, info) => {
-  console.log('beforeEach: updating route to:', to.fullPath, 'from:', from?.fullPath, info)
-  next()
+router.beforeEach((to, from) => {
+  console.log('beforeEach: updating route to:', to.fullPath, 'from:', from?.fullPath)
 })
 </script>
 

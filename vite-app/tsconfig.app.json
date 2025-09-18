@@ -12,8 +12,8 @@
     "noUncheckedSideEffectImports": true
   },
   "include": [
-    "vite-app/src/**/*.ts",
-    "vite-app/src/**/*.tsx",
-    "vite-app/src/**/*.vue"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
   ]
 }
