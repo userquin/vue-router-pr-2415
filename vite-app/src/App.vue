@@ -66,15 +66,6 @@ main {
   padding: 0 2rem;
 }
 
-.transition-mode-display {
-  background-color: #f0f0f0;
-  border-left: 4px solid #42b983;
-  padding: 8px 12px;
-  margin-bottom: 2rem;
-  font-family: monospace;
-  font-size: 0.9rem;
-}
-
 /* --- 2. Animaciones para el <transition> de VUE (el fallback) --- */
 
 .slide-fade-enter-active,

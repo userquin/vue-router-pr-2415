@@ -7,12 +7,15 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "typecheck": "pnpm nuxt:typecheck && pnpm vite:typecheck",
     "nuxt:dev": "pnpm -C nuxt-app run dev",
     "nuxt:build": "pnpm -C nuxt-app run build",
     "nuxt:preview": "pnpm -C nuxt-app run preview",
+    "nuxt:typecheck": "pnpm -C nuxt-app run typecheck",
     "vite:dev": "pnpm -C vite-app run dev",
     "vite:build": "pnpm -C vite-app run build",
-    "vite:preview": "pnpm -C vite-app run preview"
+    "vite:preview": "pnpm -C vite-app run preview",
+    "vite:typecheck": "pnpm -C vite-app run typecheck"
   },
   "dependencies": {
     "vue": "catalog:frontend",
