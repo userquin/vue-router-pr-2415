@@ -12,8 +12,13 @@ export default defineConfig({
   },
   plugins: [
     router({
+      // _inspect: true,
       experimental: {
-        autoExportsDataLoaders: ['src/loaders/**/*', '@/loaders/**/*'],
+        autoExportsDataLoaders: [
+          // 'unplugin-vue-router/data-loaders',
+          'unplugin-vue-router/data-loaders/basic',
+          // 'unplugin-vue-router/data-loaders/basic',
+        ],
         paramParsers: true,
       },
     }),
