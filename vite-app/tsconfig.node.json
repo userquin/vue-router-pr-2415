@@ -22,7 +22,6 @@
     "noUncheckedSideEffectImports": true
   },
   "include": [
-    "typed-router.d.ts",
     "vite.config.ts"
   ]
 }
