@@ -1,0 +1,35 @@
+{
+  "name": "vue-router-pr-2415",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@10.15.1",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "nuxt:dev": "pnpm -C nuxt-app run dev",
+    "nuxt:build": "pnpm -C nuxt-app run build",
+    "nuxt:preview": "pnpm -C nuxt-app run preview",
+    "vite:dev": "pnpm -C vite-app run dev",
+    "vite:build": "pnpm -C vite-app run build",
+    "vite:preview": "pnpm -C vite-app run preview"
+  },
+  "dependencies": {
+    "vue": "catalog:frontend",
+    "vue-router": "catalog:frontend"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:dev",
+    "@vitejs/plugin-vue": "catalog:dev",
+    "@vue/tsconfig": "catalog:dev",
+    "eslint": "catalog:dev",
+    "typescript": "catalog:dev",
+    "unplugin-vue-router": "catalog:dev",
+    "vite": "catalog:dev",
+    "vue-tsc": "catalog:dev"
+  },
+  "resolutions": {
+    "vue": "catalog:frontend",
+    "vue-router": "catalog:frontend"
+  }
+}
